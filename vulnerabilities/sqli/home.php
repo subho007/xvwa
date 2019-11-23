@@ -48,7 +48,15 @@
                             $item = isset($_POST['item']) ? $_POST['item'] : '';
                             $search = isset($_POST['search']) ? $_POST['search'] : '';
                             $isSearch = false;
-                            if(($item!="") && $search!=""){ 
+                            if(($item!="NULL") || ($item!="SELECT") || ($item!="WHERE") || ($item!="UNION") || ($item!="null") || ($item!="select") || ($item!="where") || ($item!="union")) {
+                                echo "<br><ul class=\"featureList\">";
+                                echo "<li class=\"cross\">Error! Are you trying to hack?.</li>";
+                                echo "</ul>";
+                            }else if(($search!="NULL") || ($search!="SELECT") || ($search!="WHERE") || ($search!="UNION") || ($search!="null") || ($search!="select") || ($search!="where") || ($search!="union")) {
+                                echo "<br><ul class=\"featureList\">";
+                                echo "<li class=\"cross\">Error! Are you trying to hack?.</li>";
+                                echo "</ul>";
+                            }else if(($item!="") && $search!=""){ 
                                 echo "<br><ul class=\"featureList\">";
                                 echo "<li class=\"cross\">Error! Can not use both search and itemcode option. Search using either of these optoins.</li>";
                                 echo "</ul>";
