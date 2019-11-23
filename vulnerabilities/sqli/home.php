@@ -52,7 +52,7 @@
                                 echo "<br><ul class=\"featureList\">";
                                 echo "<li class=\"cross\">Error! Are you trying to hack?.</li>";
                                 echo "</ul>";
-                            }else if(($search!="OR") || ($search!="AND") || ($search!="or") || ($search!="and") {
+                            }else if(($search!="OR") || ($search!="AND") || ($search!="or") || ($search!="and")) {
                                 echo "<br><ul class=\"featureList\">";
                                 echo "<li class=\"cross\">Error! Are you trying to hack?.</li>";
                                 echo "</ul>";
