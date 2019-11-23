@@ -48,7 +48,7 @@
                             $item = isset($_POST['item']) ? $_POST['item'] : '';
                             $search = isset($_POST['search']) ? $_POST['search'] : '';
                             $isSearch = false;
-                            if(($item!="OR") || ($item!="AND") || ($item!="or") || ($item!="and") {
+                            if(($item!="OR") || ($item!="AND") || ($item!="or") || ($item!="and")) {
                                 echo "<br><ul class=\"featureList\">";
                                 echo "<li class=\"cross\">Error! Are you trying to hack?.</li>";
                                 echo "</ul>";
